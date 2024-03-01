@@ -1,0 +1,21 @@
+var a = 10;
+var b = "Hello";
+var c = true;
+var d = [1, 2, 3, 4, 5];
+var e = [1, "hello", 2, "world"];
+var weekdays;
+(function (weekdays) {
+    weekdays[weekdays["sunday"] = 0] = "sunday";
+    weekdays[weekdays["monday"] = 1] = "monday";
+    weekdays[weekdays["tuesday"] = 2] = "tuesday";
+    weekdays[weekdays["wednesday"] = 3] = "wednesday";
+    weekdays[weekdays["thursday"] = 4] = "thursday";
+    weekdays[weekdays["friday"] = 5] = "friday";
+    weekdays[weekdays["saturday"] = 6] = "saturday";
+})(weekdays || (weekdays = {}));
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+console.log(e);
+console.log(weekdays);
